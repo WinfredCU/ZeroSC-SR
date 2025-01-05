@@ -31,7 +31,7 @@ ZeroSC-SR/
    ```
 
 2. **Install dependencies:**
-   We recommend creating a new virtual environment before installing.
+   We recommend creating a new virtual environment before installing it.
 
    ```bash
    conda create -n ZeroSC-SR python=3.8
@@ -45,10 +45,11 @@ ZeroSC-SR/
 
 ## Key Features
 
-- **Zero-Shot Capability**: Works without fine-tuning on new speakers or languages.
-- **High Compression Ratio**: Reduces transmission data size, beneficial in low-power and noisy conditions.
 - **Frequency-Selective Fading Channels**: Employs a sort-match strategy to efficiently allocate channel resources.
-- **Scalable Prompt Length**: Trade-off analysis between recognition performance and energy efficiency.
+- **High Compression Ratio**: Reduces transmission data size, beneficial in low-power and noisy conditions.
+- **Digital Transmission**: Digital transmission of both phonemes and acoustic features over frequency-selective fading channels
+- **Zero-Shot Capability**: Works without fine-tuning on new speakers. 
+
 
 ## Acknowledgments
 
