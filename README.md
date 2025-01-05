@@ -66,5 +66,4 @@ If you use this repository and the referenced code, please cite the following:
 
 ## License
 
-This project is released under the [MIT License](LICENSE). Feel free to adapt and modify it for your own use.
 
