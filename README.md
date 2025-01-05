@@ -42,33 +42,6 @@ ZeroSC-SR/
 3. **Download or prepare data:**
    - Follow the instructions in the `data/` folder to set up datasets.
 
-## Usage
-
-Below is a guide for running training and inference scripts. Adjust according to your specific script details.
-
-1. **Train a Model:**
-   ```bash
-   python scripts/train.py \
-       --config configs/your_config.yaml \
-       --data_dir data/ \
-       --output_dir results/train_logs
-   ```
-
-2. **Evaluate / Test a Model:**
-   ```bash
-   python scripts/test.py \
-       --config configs/your_config.yaml \
-       --checkpoint results/train_logs/checkpoint.pth \
-       --output_dir results/eval_logs
-   ```
-
-3. **Speech Reconstruction Demo:**
-   ```bash
-   python scripts/demo.py \
-       --config configs/your_demo_config.yaml \
-       --input_audio path/to/input_audio.wav \
-       --output_audio path/to/output_audio.wav
-   ```
 
 ## Key Features
 
