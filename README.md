@@ -47,23 +47,14 @@ ZeroSC-SR/
 
 - **Frequency-Selective Fading Channels**: Employs a sort-match strategy to efficiently allocate channel resources.
 - **High Compression Ratio**: Reduces transmission data size, beneficial in low-power and noisy conditions.
-- **Digital Transmission**: Digital transmission of both phonemes and acoustic features over frequency-selective fading channels
+- **Digital Transmission**: Digital transmission of both phonemes and acoustic features over frequency-selective fading channels. 
 - **Zero-Shot Capability**: Works without fine-tuning on new speakers. 
 
 
 ## Acknowledgments
 
 Portions of the code in this work are referenced from the [**Amphion project**](https://github.com/open-mmlab/Amphion).  
-If you use this repository and the referenced code, please cite the following:
 
-```
-@inproceedings{amphion,
-    author={Zhang, Xueyao and Xue, Liumeng and Gu, Yicheng and Wang, Yuancheng and Li, Jiaqi and He, Haorui and Wang, Chaoren and Song, Ting and Chen, Xi and Fang, Zihao and Chen, Haopeng and Zhang, Junan and Tang, Tze Ying and Zou, Lexiao and Wang, Mingxuan and Han, Jun and Chen, Kai and Li, Haizhou and Wu, Zhizheng},
-    title={Amphion: An Open-Source Audio, Music and Speech Generation Toolkit},
-    booktitle={{IEEE} Spoken Language Technology Workshop, {SLT} 2024},
-    year={2024}
-}
-```
 
 ## License
 
