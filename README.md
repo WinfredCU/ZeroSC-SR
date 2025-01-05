@@ -1,15 +1,9 @@
 # ZeroSC-SR_public
 
+ZeroSC-SR: Zero-Shot Semantic Communication with Speech Reconstruction
 
-
-```markdown
-# ZeroSC-SR: Zero-Shot Semantic Communication with Speech Reconstruction
-
-[![Demo Website](https://img.shields.io/badge/Demo-Website-blue.svg)](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
-
-## Abstract
-
-Advancements in artificial intelligence have enabled the development of more efficient and semantic-aware speech communication systems. This repository accompanies the paper introducing an innovative **Zero-Shot Semantic Communication System with Speech Reconstruction (ZeroSC-SR)**, designed to enhance speech transmission and reconstruction in frequency-selective fading channels.
+Abstract
+Advancements in artificial intelligence have enabled the development of more efficient and semantic-aware speech communication systems. This repository accompanies the paper introducing an innovative Zero-Shot Semantic Communication System with Speech Reconstruction (ZeroSC-SR), designed to enhance speech transmission and reconstruction in frequency-selective fading channels.
 
 By efficiently transmitting phoneme IDs and compressed prompt acoustic features, ZeroSC-SR achieves a high compression ratio and reduces transmitted data size, enabling superior performance under low-power and noisy conditions. We investigate the impact of prompt length on recognition accuracy and system performance, identifying a trade-off between performance and energy efficiency and offering practical guidelines for selecting appropriate prompt lengths.
 
@@ -17,14 +11,11 @@ Analyzing the intermediate transmission data, which includes phoneme IDs and aco
 
 Experimental results show that ZeroSC-SR surpasses conventional speech communication systems, demonstrating its effectiveness in real-world applications that demand reliable and efficient speech communication over challenging channels.
 
-## Demo
+Demo
+A live demonstration of ZeroSC-SR is available here:
+ZeroSC-SR Demo
 
-A live demonstration of ZeroSC-SR is available here:  
-[**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
-
-## Repository Structure
-
-```
+Repository Structure
 ZeroSC-SR/
 ├── configs/                # Configuration files for models and experiments
 ├── data/                   # Placeholder for data or data loading scripts
@@ -33,7 +24,13 @@ ZeroSC-SR/
 ├── utils/                  # Utility and helper functions
 ├── results/                # Generated results (logs, figures, etc.)
 └── README.md               # This README
-```
+
+## Demo
+
+A live demonstration of ZeroSC-SR is available here:  
+[**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
+
+
 
 ## Installation
 
