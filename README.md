@@ -11,24 +11,17 @@ Analyzing the intermediate transmission data, which includes phoneme IDs and aco
 
 Experimental results show that ZeroSC-SR surpasses conventional speech communication systems, demonstrating its effectiveness in real-world applications that demand reliable and efficient speech communication over challenging channels.
 
-Demo
-A live demonstration of ZeroSC-SR is available here:
-ZeroSC-SR Demo
 
-Repository Structure
-ZeroSC-SR/
-├── configs/                # Configuration files for models and experiments
-├── data/                   # Placeholder for data or data loading scripts
-├── models/                 # Model architectures and checkpoints
-├── scripts/                # Auxiliary scripts (training, inference, evaluation)
-├── utils/                  # Utility and helper functions
-├── results/                # Generated results (logs, figures, etc.)
-└── README.md               # This README
 
 ## Demo
 
 A live demonstration of ZeroSC-SR is available here:  
 [**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
+
+## Repository Structure
+
+ZeroSC-SR/ ├── configs/ # Configuration files for models and experiments ├── data/ # Placeholder for data or data loading scripts ├── models/ # Model architectures and checkpoints ├── scripts/ # Auxiliary scripts (training, inference, evaluation) ├── utils/ # Utility and helper functions ├── results/ # Generated results (logs, figures, etc.) └── README.md # This README
+
 
 
 
