@@ -16,7 +16,7 @@ ZeroSC-SR/
 ├── configs/                # Configuration files for models and experiments
 ├── data/                   # Placeholder for data or data loading scripts
 ├── models/                 # Model architectures and checkpoints
-├── scripts/                # Auxiliary scripts (training, inference, evaluation)
+├── scripts/                # Auxiliary scripts (training, inference, evaluation, channel transmission)
 ├── utils/                  # Utility and helper functions
 ├── results/                # Generated results (logs, figures, etc.)
 └── README.md               # This README
