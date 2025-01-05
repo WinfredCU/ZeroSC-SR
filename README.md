@@ -5,7 +5,7 @@ ZeroSC-SR: Zero-Shot Semantic Communication with Speech Reconstruction
 
 ## Demo
 
-A live demonstration of ZeroSC-SR is available here:  [**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
+A demonstration of ZeroSC-SR is available here:  [**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
 
 
 ## Repository Structure
@@ -105,8 +105,4 @@ Contributions are welcome! If you would like to make improvements or add new fea
 
 This project is released under the [MIT License](LICENSE). Feel free to adapt and modify it for your own use.
 
----
-
-If you have any questions or suggestions, please open an issue or submit a pull request.  
-Enjoy using **ZeroSC-SR** for your speech communication and reconstruction tasks!
 ```
