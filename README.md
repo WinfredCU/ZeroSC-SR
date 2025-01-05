@@ -78,4 +78,3 @@ Contributions are welcome! If you would like to make improvements or add new fea
 
 This project is released under the [MIT License](LICENSE). Feel free to adapt and modify it for your own use.
 
-```
