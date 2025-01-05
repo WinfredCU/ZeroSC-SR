@@ -9,8 +9,9 @@ A live demonstration of ZeroSC-SR is available here:
 [**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
 
 
-```bash
 ## Repository Structure
+
+```bash
 
 ZeroSC-SR/
 ├── configs/                # Configuration files for models and experiments
