@@ -5,8 +5,7 @@ ZeroSC-SR: Zero-Shot Semantic Communication with Speech Reconstruction
 
 ## Demo
 
-A live demonstration of ZeroSC-SR is available here:  
-[**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
+A live demonstration of ZeroSC-SR is available here:  [**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
 
 
 ## Repository Structure
