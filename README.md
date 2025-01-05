@@ -64,16 +64,6 @@ If you use this repository and the referenced code, please cite the following:
 }
 ```
 
-## Contributing
-
-Contributions are welcome! If you would like to make improvements or add new features, please:
-
-1. Fork this repository.
-2. Create a new branch (`git checkout -b feature/my-new-feature`).
-3. Commit your changes (`git commit -am 'Add a new feature'`).
-4. Push to the branch (`git push origin feature/my-new-feature`).
-5. Create a pull request.
-
 ## License
 
 This project is released under the [MIT License](LICENSE). Feel free to adapt and modify it for your own use.
