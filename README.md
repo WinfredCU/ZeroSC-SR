@@ -9,10 +9,9 @@ A live demonstration of ZeroSC-SR is available here:
 [**ZeroSC-SR Demo**](https://winfredcu.github.io/ZeroSC-SR_demo/#abstract)
 
 
-```markdown
+```bash
 ## Repository Structure
 
-```
 ZeroSC-SR/
 ├── configs/                # Configuration files for models and experiments
 ├── data/                   # Placeholder for data or data loading scripts
@@ -21,7 +20,7 @@ ZeroSC-SR/
 ├── utils/                  # Utility and helper functions
 ├── results/                # Generated results (logs, figures, etc.)
 └── README.md               # This README
-
+```
 
 ## Installation
 
