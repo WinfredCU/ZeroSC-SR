@@ -46,33 +46,7 @@ for stage_number in range(9):
         print(f"{info_type}_all: {len(loss_full)} samples, mean = {np.mean(loss_full):.4f}, std = {np.std(loss_full):.4f}, unique = {len(np.unique(loss_full))}")
         print(f"{info_type}_Stage{stage_number}: {len(loss_masked)} samples, mean = {np.mean(loss_masked):.4f}, std = {np.std(loss_masked):.4f}, unique = {len(np.unique(loss_masked))}")
 
-        # # -----------------Method 1 ------------------
-        # print("-----------------Method 1 ------------------")
 
-        # H_Y = discrete_entropy(loss_full, nbins=8)
-        # H_Y_given = discrete_entropy(loss_masked, nbins=8)
-        # I_bits = H_Y - H_Y_given 
-
-        # print(f"H(Y)       = {H_Y:.3f} bits")
-        # print(f"H(Y|X_i)   = {H_Y_given:.3f} bits")
-        # print(f"I(X_i;Y)   = {I_bits:.3f} bits")
-
-        # # -----------------Method 2 ------------------
-        # print("-----------------Method 2 ------------------")
-
-        # rng = np.random.default_rng(0)
-        # EPS = 1e-4  # remove duplicates
-        # y_mask = loss_masked + rng.normal(0, EPS, size=loss_masked.shape)
-        # y_full = loss_full + rng.normal(0, EPS, size=loss_full.shape)
-
-        # # xi is your scalar summary of stream i (here we just reuse y_mask)
-        # xi = y_mask.copy()
-
-        # I_bits = mi(xi.reshape(-1,1), y_mask.reshape(-1,1), k=3, base=2)
-        # print(f"I(X_i;Y) ≈ {I_bits:.3f} bits  (Kraskov, jittered)")
-
-        # -----------------Method 3 ------------------
-        print("-----------------Method 3 ------------------")
         # from npeet.entropy_estimators import entropy                         # H(·)
 
         # print("loss_masked:", loss_masked)
