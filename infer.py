@@ -2,7 +2,6 @@ import os
 import subprocess
 
 
-# Function to generate output path from prompt audio path
 def get_output_path(prompt_audio_path, output_folder):
     # Extract the relative part of the path after the prompt folder structure
     relative_path = os.path.relpath(prompt_audio_path, start=prompt_text_folder)
@@ -96,8 +95,6 @@ for snr_db in snr_db_list:
 
     output_folder='Experiment_Data/output/{}dB_{}'.format(snr_db, mode)
     print(output_folder)
-
     os.makedirs(output_folder, exist_ok=True)
-
     # Example usage:
     process_files(prompt_text_folder,target_text_folder, output_folder, limit=1000)
