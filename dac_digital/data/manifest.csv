@@ -1,0 +1,4 @@
+utt_id,path,dur_s
+# example rows (remove comments):
+# 000001,/absolute/or/relative/path/to/audio1.wav,10.0
+# 000002,/absolute/or/relative/path/to/audio2.wav,9.9

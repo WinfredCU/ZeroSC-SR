@@ -1,0 +1,15 @@
+torch>=2.2.0
+torchaudio>=2.2.0
+numpy>=1.24.0
+scipy>=1.11.0
+soundfile>=0.12.1
+pyyaml>=6.0.1
+tqdm>=4.66.0
+matplotlib>=3.8.0
+pandas>=2.1.0
+pystoi>=0.3.3
+pesq>=0.0.4
+pyldpc>=0.8.2
+huggingface_hub>=0.23.0
+# Descript DAC model package (install if available)
+dac @ git+https://github.com/descriptinc/descript-audio-codec.git#egg=dac
