@@ -1,0 +1,67 @@
+# Single source of truth for the experiment
+compute:
+  device: auto            # auto|cpu|cuda
+  deterministic: true
+  num_workers: 2
+  torch_seed: 2024
+
+paths:
+  artifacts_dir: dac_digital/artifacts
+  manifest_path: dac_digital/data/manifest.csv
+  results_dir: dac_digital/docs/results
+  env_snapshot: dac_digital/artifacts/ENV.txt
+
+dataset:
+  sample_rate: 16000
+  min_dur_s: 9.5
+  max_dur_s: 10.5
+  target_rms: 0.08      # RMS normalization target amplitude
+
+codec:
+  model_id: descript/dac_16khz
+  nq_list: [3, 4, 5]
+  # If the model exposes codebook_size at runtime; bits_per_index = ceil(log2(codebook_size))
+
+packing:
+  flatten_order: C_then_T_time_fastest  # codebook-major then time, time dimension fastest
+  bit_order: msb_first                  # within each index
+
+ldpc:
+  enabled: true
+  k: 3072
+  n: 6144
+  dv: 3
+  dc: 6
+  max_iter: 25
+  matrix_id: K3072N6144_DV3DC6_v1
+  seed: 1337
+
+modem:
+  constellation: qam64
+  gray_mapping: true
+  es_normalization: 1.0
+
+ofdm:
+  nfft: 256
+  cp_len: 32
+  norm: ortho
+
+channels:
+  snr_db_list: [-5, 0, 5, 10, 15]
+  types: [awgn, rayleigh, rician]
+  rician_k: 5.0
+
+experiment:
+  use_original_ref: true  # metrics vs original audio; if false, uses loopback decode
+  max_utts: 0             # 0 = use all in manifest
+  save_audio: true
+  save_codes: true
+  save_codes_hat: true
+  save_waveforms_float32: true
+  num_runs_per_setting: 1
+
+logging:
+  enable_progress: true
+  write_config_snapshot: true
+  measure_snr: true
+  log_channel_stats: true
