@@ -50,6 +50,20 @@ ZeroSC-SR/
 - **Digital Transmission**: Digital transmission of both phonemes and acoustic features over frequency-selective fading channels. 
 - **Zero-Shot Capability**: Works without fine-tuning on new speakers. 
 
+## Model Architecture and Parameters
+
+| Component        | Layer Name                                                     | Type                       | Parameters                                                    |
+| ---------------- | -------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------- |
+| Semantic Encoder | ASR: Whisper – Encoder Transformer Module                      | Encoder Transformer Module | layers=24; d_model=1024; ffn=4096; heads=16                   |
+| Semantic Encoder | ASR: Whisper – Decoder Transformer Module                      | Decoder Transformer Module | layers=24; d_model=1024; ffn=4096; heads=16                   |
+| Semantic Encoder | Acoustic Encoder: EnCodec – Enc-front Module                   | 1-D Conv                   | channels=32; kernel=7                                         |
+| Semantic Encoder | Acoustic Encoder: EnCodec – 4× Downsample Module               | Residual Conv              | kernel=3; strides=2 / 4 / 5 / 8                               |
+| Semantic Encoder | Acoustic Encoder: EnCodec – Latent RNN Module                  | 2× LSTM                    | 2 layers                                                      |
+| Semantic Encoder | Acoustic Encoder: EnCodec – Quantizer Module                   | Residual VQ                | Nq=8; codebook=1024 (10-bit)                                  |
+| Semantic Decoder | Synthesizer: VALL-E – AR Transformer Module (stream 1)         | AR Transformer Module      | layers=12; d_model=1024; ffn=4096; heads=16; dropout=0.1      |
+| Semantic Decoder | Synthesizer: VALL-E – NAR Transformer Modules ×7 (streams 2–8) | NAR Transformer Modules ×7 | layers=12 each; d_model=1024; ffn=4096; heads=16; dropout=0.1 |
+| Semantic Decoder | Acoustic Decoder: EnCodec – 4× Upsample Module                 | Transposed Conv            | kernel=7; up-strides=8 / 5 / 4 / 2; channels=32               |
+
 
 ## Acknowledgments
 
